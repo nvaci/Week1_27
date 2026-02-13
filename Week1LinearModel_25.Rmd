@@ -377,7 +377,7 @@ When to test the interactions: does the theory/clinical practice/previous studie
 
 ## Visualisation of the interaction
 
-```{r, echo=F, fig.width=14, fig.height=5, fig.align='center', warning=FALSE, message=FALSE}
+```{r, echo=F, fig.width=11, fig.height=5, fig.align='center', warning=FALSE, message=FALSE}
 require(ggplot2)
 simulatedD<-data.frame(Age=rep(seq(0, 30, by=1), 13), Weight=rep(seq(2872,4500, by=100), each=403))
 simulatedD$Pred=predict(lm4, newdata = simulatedD)
